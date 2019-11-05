@@ -1,0 +1,62 @@
+/* Tweets section */
+section.tweets {
+  border: 4px solid #555149;
+  margin-top: 50px;
+  padding:20px;
+  position: relative;
+  background-color: #F3F1EC;
+}
+
+section.tweets::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: coral;
+  z-index: -1;
+  display: none;
+}
+
+/* Tweet Header */
+article.tweet header{
+  background:  none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
+
+article.tweet header h5{
+  margin-right: auto;
+}
+
+article.tweet header h6{
+  display: none;
+}
+
+article.tweet header img{
+  height: 55px;
+  width: 55px;
+  margin-right:20px;
+}
+
+/* Tweet Body */
+section.tweets .main{
+  border-bottom: 4px solid #555149;
+  width: 100%;
+}
+
+/* Tweet Footer */
+article.tweet footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hover effect */
+section.tweets:hover::after, article.tweet:hover header h6{
+  display: block;
+}

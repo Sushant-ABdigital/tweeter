@@ -1,0 +1,28 @@
+.user_input {
+  width: 100%;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: none;
+  resize: none;
+  border-bottom: 2px solid burlywood;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.tweet_btn{
+  height: 30px;
+  width:150px;
+  font-family: bungee;
+  background-color: #4151a1;
+  color: #FFF;
+  font-size: 16px;
+}
+
+.counter{
+  font-family: bungee;
+  float: right;
+}
+.negative{
+  color: red;
+}

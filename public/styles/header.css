@@ -1,0 +1,42 @@
+/* Position absolute/relative approach */
+/* header {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background-color: #ccaa00;
+  background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
+}
+.header_avatar {
+  position: absolute;
+  height: 175px;
+  width: 175px;
+  right: 50%;
+  transform: translate(50%, 80%);
+
+}
+.header_content {
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 50%);
+  top: 60%;
+} */
+
+/* Flexbox One */
+header {
+  height: 400px;
+  width: 100%;
+  background-color: #ccaa00;
+  background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header_avatar{
+  height: 30rem;
+  width: 14rem;
+}
+.header_content h2{
+  margin-top: 0;
+}
