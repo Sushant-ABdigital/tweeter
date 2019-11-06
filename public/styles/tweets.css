@@ -44,7 +44,7 @@ article.tweet header img{
 }
 
 /* Tweet Body */
-section.tweets .main{
+section.tweets .body {
   border-bottom: 4px solid #555149;
   width: 100%;
 }
@@ -57,6 +57,6 @@ article.tweet footer {
 }
 
 /* Hover effect */
-section.tweets:hover::after, article.tweet:hover header h6{
+section.tweets:hover::after, article.tweet:hover header h6 {
   display: block;
 }
