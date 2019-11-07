@@ -29,7 +29,7 @@ nav span {
 } */
 
 /* Flexbox approach */
-nav span{
+nav span {
   font-family: bungee;
 }
 
@@ -37,35 +37,44 @@ nav > * {
   margin: 1.5em;
 }
 
-.nav_logo span{
-  font-size: 2.6rem;
+.nav_logo span {
+  font-size: 40px;
 }
 
-.nav_content{
+.nav_content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.nav_content a{
+.nav_content a {
   cursor: pointer;
 }
 
-.nav_content a:hover .fas{
+.nav_content a:hover .fas {
   animation: slider 0.5s infinite;
 }
 
-@keyframes slider{
-  0%{
+@keyframes slider {
+  0% {
     transform: translateY(0);
   }
-  50%{
+  50% {
     transform: translateY(10px);
   }
-  100%{
+  100% {
     transform: translateY(0);
   }
 }
 .fa-angle-double-down {
   color: tomato;
+}
+
+@media screen and (max-width: 768px){
+  .nav_logo span {
+    font-size: 25px;
+  }
+  .nav_content span{
+    font-size: 18px;
+  }
 }

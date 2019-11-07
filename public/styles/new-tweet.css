@@ -1,5 +1,6 @@
 .new-tweet {
   display: none;
+  margin-bottom: 50px;
 }
 
 .user_input {
@@ -10,7 +11,7 @@
   background: none;
   resize: none;
   border-bottom: 2px solid burlywood;
-  height: 40px;
+  height: auto;
   margin-bottom: 10px;
 }
 
@@ -37,4 +38,9 @@
   padding: 10px;
   border-radius: 10px;
   display: none;
+}
+@media screen and (max-width: 768px){
+  .new-tweet{
+    margin: 50px;
+  }
 }

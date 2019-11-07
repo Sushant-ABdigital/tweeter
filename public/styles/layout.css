@@ -31,12 +31,15 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(140px);
+}
+
 main {
-  width: 90%;
-  background-color: teal;
-  height: 250px;
-  margin: auto;
   background-color: inherit;
+  margin-right: 10px;
 }
 
 .container_top {
@@ -51,8 +54,15 @@ main {
   bottom: 50px;
   right: 20px;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+  .wrapper{
+    margin: 0;
+    flex-direction: column;
+    transform: translateY(120px);
+  }
 }

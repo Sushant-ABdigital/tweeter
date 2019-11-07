@@ -32,13 +32,42 @@
 //   }
 // ];
 
+//Prevention of malicious input
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
-//Function to create mark up of tweet.
 
+//Function to format the date.
+const timeSince = date => {
+  let seconds = Math.floor((new Date() - date) / 1000);
+
+  let interval = Math.floor(seconds / 31536000);
+
+  if (interval > 1) {
+    return interval + " years";
+  }
+  interval = Math.floor(seconds / 2592000);
+  if (interval > 1) {
+    return interval + " months";
+  }
+  interval = Math.floor(seconds / 86400);
+  if (interval > 1) {
+    return interval + " days";
+  }
+  interval = Math.floor(seconds / 3600);
+  if (interval > 1) {
+    return interval + " hours";
+  }
+  interval = Math.floor(seconds / 60);
+  if (interval > 1) {
+    return interval + " minutes";
+  }
+  return Math.floor(seconds) + " seconds";
+};
+
+//Function to create mark up of tweet.
 const createTweetElement = data => {
   return `<section class="tweets">
       <article class="tweet">
@@ -51,7 +80,7 @@ const createTweetElement = data => {
           <p>${escape(data.content.text)}</p>
         </section>
         <footer>
-          <p>${data.created_at}</p>
+          <p>${timeSince(data.created_at)} ago</p>
           <div class="icons">
             <i class="fas fa-flag"></i>
             <i class="fas fa-retweet"></i>
@@ -114,7 +143,6 @@ $(document).ready(() => {
   $("#tweeter_form").submit(function(e) {
     //Preventing the default behaviour of submitting the form
     e.preventDefault();
-
     //validation of form input
     const userInput = $(".user_input").val();
     if (!userInput) {
@@ -149,6 +177,8 @@ $(document).ready(() => {
         console.log("error occured");
       }
     });
+    $(".user_input").val('');
+    $('.counter').text("140");
   });
 
   //Animation of form
@@ -158,7 +188,7 @@ $(document).ready(() => {
         $(".user_input").focus();
       });
     } else {
-      $(".new-tweet").hide();
+      $(".new-tweet").slideUp(500);
     }
   });
 });

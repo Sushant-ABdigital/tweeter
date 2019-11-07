@@ -23,22 +23,25 @@
 
 /* Flexbox One */
 header {
-  height: 600px;
-  width: 100%;
+  height: 500px;
+  width: 500px;
   background-color: #ccaa00;
   background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
-  padding-top: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 20px;
 }
 
 .header_avatar{
-  height: 14rem;
-  width: 14rem;
   transform: translateY(4rem);
 }
 .header_content h2{
   margin-top: 0;
   transform: translateY(4rem);
+}
+@media screen and (max-width: 768px){
+  header{
+    width: 100%;
+  }
 }

@@ -32,40 +32,44 @@
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <div class="nav_logo">
-        <span>tweeter</span>
-      </div>
-      <div class="nav_content">
-        <span>Write a new tweet</span>
-        <a><i class="fas fa-angle-double-down"></i></a>
-      </div>
-    </nav>
-    <header>
-      <div class="header_avatar">
-        <img src="/images/profile-hex.png" />
-      </div>
-      <br />
-      <div class="header_content">
-        <h2>Amy Mansel</h2>
-      </div>
-    </header>
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <p class="error_msg">This is the error message</p>
-        <form action="/tweets" method="POST" id="tweeter_form">
-          <textarea class="user_input" name="text" placeholder="What are you humming about?"></textarea>
-          <input class="tweet_btn" type="submit" value="Tweet" />
-          <span class="counter">140</span>
-        </form>
-      </section>
-      <section class="tweet-container">
-        <!-- Tweets will be placed here -->
-      </section>
-    </main>
+      <!-- Top nav bar (fixed) -->
+      <nav>
+        <div class="nav_logo">
+          <span>tweeter</span>
+        </div>
+
+        <div class="nav_content">
+          <span>Write a new tweet</span>
+          <a><i class="fas fa-angle-double-down"></i></a>
+        </div>
+      </nav>
+      <div class="wrapper">
+      <header>
+        <div class="header_avatar">
+          <img src="/images/profile-hex.png" />
+        </div>
+        <br />
+        <div class="header_content">
+          <h2>Amy Mansel</h2>
+        </div>
+      </header>
+      <!-- Page-specific (main) content here -->
+
+      <main class="container">
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <p class="error_msg">This is the error message</p>
+          <form action="/tweets" method="POST" id="tweeter_form">
+            <textarea class="user_input" name="text" placeholder="What are you humming about?" rows="2  "></textarea>
+            <input class="tweet_btn" type="submit" value="Tweet" />
+            <span class="counter">140</span>
+          </form>
+        </section>
+        <section class="tweet-container">
+          <!-- Tweets will be placed here -->
+        </section>
+      </main>
+    </div>
     <!-- Go to TOP button -->
     <div class="container_top">
       <div class="top">
