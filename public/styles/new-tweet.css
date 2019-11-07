@@ -1,3 +1,7 @@
+.new-tweet {
+  display: none;
+}
+
 .user_input {
   width: 100%;
   border: none;
@@ -10,19 +14,27 @@
   margin-bottom: 10px;
 }
 
-.tweet_btn{
+.tweet_btn {
   height: 30px;
-  width:150px;
+  width: 150px;
   font-family: bungee;
   background-color: #4151a1;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
 }
 
-.counter{
+.counter {
   font-family: bungee;
   float: right;
 }
-.negative{
+.negative {
   color: red;
+}
+
+.error_msg {
+  border:2px solid red;
+  color: red;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
 }

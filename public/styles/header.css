@@ -23,7 +23,7 @@
 
 /* Flexbox One */
 header {
-  height: 400px;
+  height: 600px;
   width: 100%;
   background-color: #ccaa00;
   background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
@@ -34,9 +34,11 @@ header {
 }
 
 .header_avatar{
-  height: 30rem;
+  height: 14rem;
   width: 14rem;
+  transform: translateY(4rem);
 }
 .header_content h2{
   margin-top: 0;
+  transform: translateY(4rem);
 }

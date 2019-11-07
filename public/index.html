@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
@@ -39,7 +39,7 @@
       </div>
       <div class="nav_content">
         <span>Write a new tweet</span>
-        <span><i class="fas fa-angle-double-down"></i></span>
+        <a><i class="fas fa-angle-double-down"></i></a>
       </div>
     </nav>
     <header>
@@ -55,14 +55,24 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="/tweets" method="POST">
+        <p class="error_msg">This is the error message</p>
+        <form action="/tweets" method="POST" id="tweeter_form">
           <textarea class="user_input" name="text" placeholder="What are you humming about?"></textarea>
           <input class="tweet_btn" type="submit" value="Tweet" />
           <span class="counter">140</span>
         </form>
       </section>
-      <!-- Tweets will be placed here -->
+      <section class="tweet-container">
+        <!-- Tweets will be placed here -->
+      </section>
     </main>
+    <!-- Go to TOP button -->
+    <div class="container_top">
+      <div class="top">
+        <i class="fas fa-angle-double-up"></i>
+      </div>
+    </div>
+
     <script src="scripts/composer-char-counter.js"></script>
   </body>
 </html>

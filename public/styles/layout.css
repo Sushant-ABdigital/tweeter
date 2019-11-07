@@ -22,19 +22,37 @@ img {
 
 body {
   color: #545149;
-  background-color: #F3F1EC;
+  background-color: #f3f1ec;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
+  position: relative;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
 main {
   width: 90%;
   background-color: teal;
   height: 250px;
   margin: auto;
   background-color: inherit;
+}
+
+.container_top {
+  display: none;
+}
+
+.top {
+  background-color: #ccaa00;
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

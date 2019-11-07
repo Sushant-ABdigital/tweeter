@@ -47,6 +47,25 @@ nav > * {
   align-items: center;
 }
 
+.nav_content a{
+  cursor: pointer;
+}
+
+.nav_content a:hover .fas{
+  animation: slider 0.5s infinite;
+}
+
+@keyframes slider{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
 .fa-angle-double-down {
   color: tomato;
 }
