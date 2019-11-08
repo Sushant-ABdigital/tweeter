@@ -15,3 +15,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+
+## Functionalities:
+
+- Focused on front end development of application.
+- Understood various CSS properties, used largely flexbox to achive desired layout.
+- Fully responsive design.
+- Used jQuery for animation and DOM manipulation.
