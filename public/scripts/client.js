@@ -105,7 +105,6 @@ const renderTweets = data => {
 $(document).ready(() => {
   //Go to Top functionality...
   $(window).scroll(function() {
-    console.log("ran");
     if ($(this).scrollTop() > 500) {
       $(".container_top").fadeIn();
     } else {
