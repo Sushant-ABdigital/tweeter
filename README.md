@@ -17,8 +17,8 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ## Screenshots
-!["Screenshot of tweeter main page"]("https://github.com/Sushant-ABdigital/tweeter/blob/master/docs/Responsive%20Image.png")
-!["Screenshot of Responsive layout"]("https://github.com/Sushant-ABdigital/tweeter/blob/master/docs/Tweeter%20Main%20page.png")
+!["Screenshot of tweeter main page"]("https://github.com/Sushant-ABdigital/tweeter/blob/master/docs/ResponsiveImage.png")
+!["Screenshot of Responsive layout"]("https://github.com/Sushant-ABdigital/tweeter/blob/master/docs/TweeterMainPage.png")
 
 ## Functionalities:
 
