@@ -17,7 +17,10 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ## Screenshots
+### Tweeter Main Page
 !["Screenshot of tweeter main page"](/docs/TweeterMainPage.png)
+
+### Responsive layout
 !["Screenshot of Responsive layout"](/docs/ResponsiveImage.png)
 
 ## Functionalities:
